@@ -1,12 +1,12 @@
 # 1. Importing packages
 import streamlit as st
 import pandas as pd
-import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 
 # 2. Importing datasets
 
+# Imported from Kaggle using their API command, is read from the unzipped data file
 df = pd.read_csv('sleep_efficiency.csv', index_col='ID')
 
 url = 'https://raw.githubusercontent.com/reisanar/datasets/master/SleepStudy.csv'
