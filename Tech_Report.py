@@ -142,7 +142,7 @@ alc_box.add_trace(go.Box(x=df.alcohol_consumption, y=df.REM_sleep_percentage, na
 alc_dropdown = [{'label': 'All', 'method': 'update', 'args': [{'visible': [True, True, True]}, {'title': 'All'}]},
                 {'label': 'Deep sleep', 'method': 'update', 'args': [{'visible': [True, False, False]}, {'title': 'Deep sleep'}]},
                 {'label': 'Light sleep', 'method': 'update', 'args': [{'visible': [False, True, False]}, {'title': 'Deep sleep'}]},
-                {'label': 'REM sleep', 'method': 'update', 'args': [{'visible': [True, False, False]}, {'title': 'REM sleep'}]}]
+                {'label': 'REM sleep', 'method': 'update', 'args': [{'visible': [False, False, True]}, {'title': 'REM sleep'}]}]
 
 alc_box.update_layout(boxmode='group', title={'text': 'Impact of alcohol on the percentage of deep, light and REM sleep.'},
                         legend={'title': 'Types of sleep'},
